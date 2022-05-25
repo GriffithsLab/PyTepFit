@@ -44,6 +44,7 @@ For the purposes of this study, already preprocessed TMS-EEG data following a st
 | Fitting individual subjects’ empirical TEPs | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GriffithsLab/PyTepFit/tree/main/nb/model_fit.ipynb) | [![View the notebook](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.jupyter.org/github/GriffithsLab/PyTepFit/tree/main/nb/model_fit.ipynb?flush_cache=true) |
 
 
+
 |   | Run | View |
 | - | --- | ---- |
 | Goodness of Fit | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GriffithsLab/PyTepFit/tree/main/nb/Goodness_of_fit.ipynb) | [![View the notebook](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.jupyter.org/github/GriffithsLab/PyTepFit/tree/main/nb/model_fit.ipynb?flush_cache=true) |
