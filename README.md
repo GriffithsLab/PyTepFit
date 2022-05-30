@@ -23,9 +23,9 @@ A brain network model comprising 200 cortical areas was used to model TMS-evoked
 <img src="https://render.githubusercontent.com/render/math?math=\Ddot{v}\left(t\right) %2B \frac{2}{\tau_{e,i}}\dot{v}\left(t\right) %2B \frac{1}{\tau_{e.i}^2}v\left(t\right) = \frac{H_{e,i}}{\tau_{e,i}}m\left(t\right)">
 </p>
 
-```math
-\Ddot{v}\left(t\right) %2B \frac{2}{\tau_{e,i}}\dot{v}\left(t\right) %2B \frac{1}{\tau_{e.i}^2}v\left(t\right) = \frac{H_{e,i}}{\tau_{e,i}}m\left(t\right)
-```
+
+$$\Ddot{v}\left(t\right) %2B \frac{2}{\tau_{e,i}}\dot{v}\left(t\right) %2B \frac{1}{\tau_{e.i}^2}v\left(t\right) = \frac{H_{e,i}}{\tau_{e,i}}m\left(t\right)$$
+
 
 
 **Dependencies**   
