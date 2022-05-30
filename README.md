@@ -20,11 +20,11 @@ Studying the role of recurrent connectivity in stimulation-evoked neural respons
 A brain network model comprising 200 cortical areas was used to model TMS-evoked activity patterns, where each network node represents population-averaged activity of a single brain region according to the rationale of mean field theory60. We used the Jansen-Rit (JR) equations to describe activity at each node, which is one of the most widely used neurophysiological models for both stimulus-evoked and resting-state EEG activity measurements. JR is a relatively coarse-grained neural mass model of the cortical microcircuit, composed of three interconnected neural populations: pyramidal projection neurons, excitatory interneurons, and inhibitory interneurons. The excitatory and the inhibitory populations both receive input from and feed back to the pyramidal population but not to each other, and so the overall circuit motif contains one positive and one negative feedback loop. For each of the three neural populations, the post-synaptic somatic and dendritic membrane response to an incoming pulse of action potentials is described by the second-order differential equation:
 
 <p align="center">
-<img src="https://render.githubusercontent.com/render/math?math=\Ddot{v}\left(t\right) %2B \frac{2}{\tau_{e,i}}\dot{v}\left(t\right) %2B \frac{1}{\tau_{e.i}^2}v\left(t\right) = \frac{H_{e,i}}{\tau_{e,i}}m\left(t\right)">
+<img src="https://render.githubusercontent.com/render/math?math={\Ddot{v}\left(t\right) +\frac{2}{\tau_{e,i}}\dot{v}\left(t\right)+\frac{1}{\tau_{e.i}^2}v\left(t\right) = \frac{H_{e,i}}{\tau_{e,i}}m\left(t\right)}">
 </p>
 
 
-$$\Ddot{v}\left(t\right) %2B \frac{2}{\tau_{e,i}}\dot{v}\left(t\right) %2B \frac{1}{\tau_{e.i}^2}v\left(t\right) = \frac{H_{e,i}}{\tau_{e,i}}m\left(t\right)$$
+![image](https://user-images.githubusercontent.com/37826571/171048797-bc309a8d-baa0-4b50-9bba-85edfb8b8935.png)
 
 
 
