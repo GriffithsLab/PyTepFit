@@ -95,14 +95,24 @@ For the purposes of this study, already preprocessed TMS-EEG data following a st
 ## Prepare the data
 
 If you want to run the code locally please follow the instructions: 
-1) Install the required dependencies 
-2) Create a folder in your local machine `reproduce_Momi_et_al_2022`
-3) Download the required data folder at: https://drive.google.com/drive/folders/1iwsxrmu_rnDCvKNYDwTskkCNt709MPuF
-4) Download the fsaverage folder at: https://drive.google.com/drive/folders/1YPyf3h9YKnZi0zRwBwolROQuqDtxEfzF?usp=sharing
-5) 
+1) Install the required dependencies using:
+```
+pip install -r requirements.txt
+```
+
+2) Download PyTepFit using: 
+```
+git-clone https://github.com/GriffithsLab/PyTepFit
+```
+
+3) Create a folder in your local machine `reproduce_Momi_et_al_2022`
+4) Download the required data folder at: https://drive.google.com/drive/folders/1iwsxrmu_rnDCvKNYDwTskkCNt709MPuF
+5) Download the fsaverage folder at: https://drive.google.com/drive/folders/1YPyf3h9YKnZi0zRwBwolROQuqDtxEfzF?usp=sharing
+6) Move the data and the fsaverage folders inside `reproduce_Momi_et_al_2022` (please see the example of the data structure below)
 
 ![image](https://user-images.githubusercontent.com/37826571/193607788-273c7c22-e491-4467-b4fb-71cf6e8a577c.png)
 
+6) You now ready to run the nb on your local machine. Please be sure to change the path to where your data are stored
 
 ## Notebooks
 
