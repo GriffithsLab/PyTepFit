@@ -92,6 +92,17 @@ For the purposes of this study, already preprocessed TMS-EEG data following a st
 * Biabani M, Fornito A, Mutanen TP, Morrow J & Rogasch NC (2019). Characterizing and minimizing the contribution of sensory inputs to TMS-evoked potentials. Brain Stimulat 12, 1537–1552.
 
 
+## Prepare the data
+
+If you want to run the code locally please follow the instructions: 
+1) Install the required dependencies 
+2) Create a folder in your local machine `reproduce_Momi_et_al_2022`
+3) Download the required data folder at: https://drive.google.com/drive/folders/1iwsxrmu_rnDCvKNYDwTskkCNt709MPuF
+4) Download the fsaverage folder at: https://drive.google.com/drive/folders/1YPyf3h9YKnZi0zRwBwolROQuqDtxEfzF?usp=sharing
+5) 
+
+![image](https://user-images.githubusercontent.com/37826571/193607788-273c7c22-e491-4467-b4fb-71cf6e8a577c.png)
+
 
 ## Notebooks
 
