@@ -92,7 +92,7 @@ For the purposes of this study, already preprocessed TMS-EEG data following a st
 * Biabani M, Fornito A, Mutanen TP, Morrow J & Rogasch NC (2019). Characterizing and minimizing the contribution of sensory inputs to TMS-evoked potentials. Brain Stimulat 12, 1537–1552.
 
 
-## Prepare the data
+## Running the code on your local machine
 
 If you want to run the code locally please follow the instructions: 
 1) Install the required dependencies using:
@@ -114,7 +114,8 @@ git-clone https://github.com/GriffithsLab/PyTepFit
 
 6) You now ready to run the nb on your local machine. Please be sure to change the path to where your data are stored
 
-## Notebooks
+
+## Running the code on Google Colab
 
 |   | Run | View |
 | - | --- | ---- |
