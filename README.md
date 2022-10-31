@@ -24,21 +24,21 @@ A brain network model comprising 200 cortical areas was used to model TMS-evoked
 <img src=https://latex.codecogs.com/png.latex?%5CDdot%7Bv%7D%5Cleft%28t%5Cright%29%20&plus;%5Cfrac%7B2%7D%7B%5Ctau_%7Be%2Ci%7D%7D%5Cdot%7Bv%7D%5Cleft%28t%5Cright%29&plus;%5Cfrac%7B1%7D%7B%5Ctau_%7Be.i%7D%5E2%7Dv%5Cleft%28t%5Cright%29%20%3D%20%5Cfrac%7BH_%7Be%2Ci%7D%7D%7B%5Ctau_%7Be%2Ci%7D%7Dm%5Cleft%28t%5Cright%29>
 </p>
 
-which is equivalent to a convolution of incoming activity with a synaptic impulse response function 
+which is equivalent to a convolution of incoming activity with a synaptic impulse response function
 
 <p align="center">
 <img src=https://latex.codecogs.com/png.latex?v%28t%29%20%3D%20%5Cint%5Climits_0%5E%7B%5Cinfty%7D%20d%20%5Ctau%20m%28%5Ctau%29%20%5Ccdot%20h_%7Be%2Ci%7D%20%28t-%5Ctau%29>
 </p>
 
-whose kernel $h_{e,i}(t)$ is given by 
+whose kernel $h_{e,i}(t)$ is given by
 
 <p align="center">
 <img src=https://latex.codecogs.com/png.latex?h_%7Be%2Ci%7D%20%3D%20%5Cfrac%7BH_%7Be%2Ci%7D%7D%7B%5Ctau_%7Be%2Ci%7D%7D%20%5Ccdot%20t%20%5Ccdot%20exp%28%20-%5Cfrac%7Bt%7D%7B%5Ctau_%7Be%2Ci%7D%7D%20%29>
 </p>
 
-where $m(t)$ is the (population-average) presynaptic input, $v(t)$ is the postsynaptic membrane potential, $H_{e,i}$ is the maximum postsynaptic potential and $\tau_{e,i}$ a lumped representation of delays occurring during the synaptic transmission. 
+where $m(t)$ is the (population-average) presynaptic input, $v(t)$ is the postsynaptic membrane potential, $H_{e,i}$ is the maximum postsynaptic potential and $\tau_{e,i}$ a lumped representation of delays occurring during the synaptic transmission.
 
-This synaptic response function, also known as a pulse-to-wave operator [Freeman et al., 1975](https://www.sciencedirect.com/book/9780122671500/mass-action-in-the-nervous-system), determines the excitability of the population, as parameterized by the rate constants $a$ and $b$, which are of particular interest in the present study. Complementing the pulse-to-wave operator for the synaptic response, each neural population also has wave-to-pulse operator [Freeman et al., 1975](https://www.sciencedirect.com/book/9780122671500/mass-action-in-the-nervous-system) that determines the its output - the (population-average) firing rate - which is an instantaneous function of the somatic membrane potential that takes the sigmoidal form 
+This synaptic response function, also known as a pulse-to-wave operator [Freeman et al., 1975](https://www.sciencedirect.com/book/9780122671500/mass-action-in-the-nervous-system), determines the excitability of the population, as parameterized by the rate constants $a$ and $b$, which are of particular interest in the present study. Complementing the pulse-to-wave operator for the synaptic response, each neural population also has wave-to-pulse operator [Freeman et al., 1975](https://www.sciencedirect.com/book/9780122671500/mass-action-in-the-nervous-system) that determines the its output - the (population-average) firing rate - which is an instantaneous function of the somatic membrane potential that takes the sigmoidal form
 
 <p align="center">
 <img src=https://latex.codecogs.com/png.latex?Su%28t%29%20%3D%20%5Cbegin%7Bcases%7D%20%5Cfrac%7Be_%7B0%7D%7D%7B1-exp%28r%28v_%7B0%7D%20-%20v%28t%29%29%29%7D%20%26%20t%5Cgeq%200%20%5C%5C%200%20%26%20t%5Cleq%200%20%5C%5C%20%5Cend%7Bcases%7D>
@@ -46,7 +46,7 @@ This synaptic response function, also known as a pulse-to-wave operator [Freeman
 
 where $e_{0}$ is the maximum pulse, $r$ is the steepness of the sigmoid function, and $v_0$ is the postsynaptic potential for which half of the maximum pulse rate is achieved.
 
-In practice, we re-write the three sets of second-order differential equations that follow the form in (1) as pairs of coupled first-order differential equations, and so the full JR system for each individual cortical area $j \in i:N$ in our network of $N$=200 regions is given by the following six equations: 
+In practice, we re-write the three sets of second-order differential equations that follow the form in (1) as pairs of coupled first-order differential equations, and so the full JR system for each individual cortical area $j \in i:N$ in our network of $N$=200 regions is given by the following six equations:
 
 <p align="center">
 <img src=https://latex.codecogs.com/png.latex?%5Cdot%7Bv%7D_%7Bj1%7D%20%3D%20x_%7Bj1%7D>
@@ -94,13 +94,13 @@ For the purposes of this study, already preprocessed TMS-EEG data following a st
 
 ## Running the code on your local machine
 
-If you want to run the code locally please follow the instructions: 
+If you want to run the code locally please follow the instructions:
 1) Install the required dependencies using:
 ```
 pip install -r requirements.txt
 ```
 
-2) Download PyTepFit using: 
+2) Download PyTepFit using:
 ```
 git-clone https://github.com/GriffithsLab/PyTepFit
 ```
@@ -115,17 +115,7 @@ git-clone https://github.com/GriffithsLab/PyTepFit
 6) You now ready to run the nb on your local machine. Please be sure to change the path to where your data are stored
 
 
-## Running the code on Google Colab
-
-|   | Run | View |
-| - | --- | ---- |
-| Fitting individual subjects’ empirical TEPs | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Davi1990/PyTepFit/blob/master/nb/model_fit.ipynb) | [![View the notebook](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.jupyter.org/github/Davi1990/PyTepFit/blob/master/nb/model_fit.ipynb?flush_cache=true) |
-
-
-|   | Run | View |
-| - | --- | ---- |
-| Goodness of Fit | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Davi1990/PyTepFit/blob/master/nb/Goodness_of_fit.ipynb) | [![View the notebook](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.jupyter.org/github/Davi1990/PyTepFit/blob/master/nb/model_fit.ipynb?flush_cache=true) |
-
+## Main Results
 
 Comparison between simulated and empirical TMS-EEG data in channel space. A) Empirical and simulated TMSEEG time series for 3 representative subjects showing a robust recovery of individual subjects’ empirical TEP propagation patterns in model-generated activity EEG time series. B) Pearson correlation coefficients over subjects between empirical and simulated TMS-EEG time series. C) Time-wise permutation tests results showing the significant Pearson correlation coefficient and the corresponding reversed p-values (bottom) for every electrode. D) PCI values extracted from the empirical (orange) and simulated (blue) TMS-EEG time series (left). Significant positive correlation (R2 = 80%, p < 0.0001) was found between the simulated and the empirical PCI (right).
 
@@ -135,12 +125,6 @@ Comparison between simulated and empirical TMS-EEG data in channel space. A) Emp
 Comparison between simulated and empirical TMS-EEG data in source space. A) TMS-EEG time series showing a robust recovery of grand-mean empirical TEP patterns in model-generated EEG time series. B) Source reconstructed TMS-evoked propagation pattern dynamics for empirical (top) and simulated (bottom) data. C) Time-wise permutation test results showing the significant Pearson correlation coefficient (tp) and the corresponding reversed p-values (bottom) for every vertex. Network-based dSPM values extracted for the grand mean empirical (left) and simulated (right) source-reconstructed time series.
 
 ![alt text](https://github.com/GriffithsLab/PyTepFit/blob/main/img/Figure_4.PNG)
-
-
-|   | Run | View |
-| - | --- | ---- |
-| Params exploration | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Davi1990/PyTepFit/blob/master/nb/Params_exploration.ipynb) | [![View the notebook](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.jupyter.org/github/Davi1990/PyTepFit/blob/master/nb/model_fit.ipynb?flush_cache=true) |
-
 
 Synaptic time constant of inhibitory population affects early and late TEP amplitudes. A) Singular value decomposition (SVD) topoplots for simulated (top) and empirical (bottom) TMS-EEG data. By looking at simulated (top) and empirical (bottom) grand mean timeseries, results revealed that the first (orange outline) and the second (blue outline) components were located ∼65ms and ∼110ms after the TMS pulse. B) First (orange outline) and second (blue outline) components latency and amplitude were extracted for every subject and the distribution plots (top row) show the time location where higher cosine similarity with the SVD components were found. Scatter plots (bottom row) show a negative (left) and positive (right) significant correlation between the synaptic time constant of the inhibitory population and the amplitude of the the first and second component. C) Model-generated first and second SVD components for 2 representative subjects with high (top) and low (bottom) value for the synaptic time constant of the inhibitory population. Topoplots show that higher synaptic time constant affects the amplitude of the individual first and second SVD components. D) Model-generated TMS-EEG data were run using the optimal (top right) or a value decreased by 85% (central left) for the synaptic time constant of the inhibitory population. Absolute values for different values of the synaptic time constant of the inhibitory population (bottom right). Results show an increase in the amplitude of the early first local component and a decrease of the second latest global component
 
