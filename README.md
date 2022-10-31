@@ -102,7 +102,7 @@ pip install -r requirements.txt
 
 2) Download PyTepFit using:
 ```
-git-clone https://github.com/GriffithsLab/PyTepFit
+git clone https://github.com/GriffithsLab/PyTepFit
 ```
 
 3) Create a folder in your local machine `reproduce_Momi_et_al_2022`
