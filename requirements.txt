@@ -10,5 +10,5 @@ numpy
 pandas
 scipy
 seaborn
-pytorch
+torch
 sklearn
