@@ -1,7 +1,3 @@
-condacolab
-jupyter 
-jupyter_contrib_nbextensions
-jupyter_nbextensions_configurator
 matplotlib
 mne
 nibabel
