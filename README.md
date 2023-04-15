@@ -1,6 +1,9 @@
 # Modelling large-scale brain network dynamics underlying the TMS-EEG evoked response
 
-This repository includes the code required to reproduce the results in: "TMS-EEG evoked responses are driven by recurrent large-scale network dynamics" Davide Momi, Zheng Wang, John D. Griffiths
+This repository includes the code required to reproduce the results in: "TMS-EEG evoked responses are driven by recurrent large-scale network dynamics" Davide Momi, Zheng Wang, John D. Griffiths. 
+
+#### Please read our paper, and if you use this code, please cite our paper:
+Momi D, Wang Z, Griffiths JD. 2023. TMS-EEG evoked responses are driven by recurrent large-scale network dynamics. eLife2023;12:e83232 DOI: https://doi.org/10.7554/eLife.83232 
 
 
 
